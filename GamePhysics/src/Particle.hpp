@@ -25,15 +25,9 @@ public:
 	void setParticle(Vector2D pos, Vector2D v, float m);
 
 	// TODO: change this to getY and getX
-	Vector2D getPosition() {
-		return position;
-	}
-	Vector2D getVelocity() {
-		return velocity;
-	}
-	float getMass() {
-		return mass;
-	}
+	Vector2D getPosition();
+	Vector2D getVelocity();
+	float getMass();
 
 };
 

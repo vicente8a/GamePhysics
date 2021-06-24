@@ -21,6 +21,13 @@ void Vector2D::setVector2D(float x_coordinate, float y_coordinate) {
 	x = x_coordinate;
 	y = y_coordinate;
 }
+
+float Vector2D::getX() {
+	return x;
+}
+float Vector2D::getY() {
+	return y;
+}
 /*
 Vector2D::~Vector2D() {
 	// TODO Auto-generated destructor stub

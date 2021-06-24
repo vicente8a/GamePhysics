@@ -18,7 +18,7 @@ Particle particles[num_particles];
 void PrintParticles() {
 	for(int i = 0; i < num_particles; i++) {
 		Particle *particle = &particles[i];
-		printf("particle[%i] (%.2f, %.2f\n", i, particle->getPosition(), particle->getPosition());
+		//printf("particle[%i] (%.2f, %.2f\n", i, particle->getPosition(), particle->getPosition());
 	}
 }
 
