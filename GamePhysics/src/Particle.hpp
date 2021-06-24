@@ -5,10 +5,10 @@
  *      Author: vicenteochoa
  */
 
-#ifndef PARTICLE_H_
-#define PARTICLE_H_
+#ifndef PARTICLE_HPP_
+#define PARTICLE_HPP_
 
-#include "Vector2D.h"
+#include "Vector2D.hpp"
 
 class Particle {
 
@@ -24,6 +24,7 @@ public:
 
 	void setParticle(Vector2D pos, Vector2D v, float m);
 
+	// TODO: change this to getY and getX
 	Vector2D getPosition() {
 		return position;
 	}
@@ -36,4 +37,4 @@ public:
 
 };
 
-#endif /* PARTICLE_H_ */
+#endif /* PARTICLE_HPP_ */
