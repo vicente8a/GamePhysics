@@ -25,6 +25,19 @@ void Particle::setParticle(Vector2D pos, Vector2D v, float m) {
 	velocity = v;
 	mass = m;
 }
+
+Vector2D Particle::getPosition() {
+	return position;
+}
+
+Vector2D Particle::getVelocity() {
+	return velocity;
+}
+
+float Particle::getMass() {
+	return mass;
+}
+
 /*
 Particle::~Particle() {
 	// TODO Auto-generated destructor stub

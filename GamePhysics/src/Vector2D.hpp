@@ -26,12 +26,8 @@ public:
 	void setVector2D(float x_coordinate, float y_coordinate);
 
 	// getter methods
-	float getX() {
-		return x;
-	}
-	float getY() {
-		return y;
-	}
+	float getX();
+	float getY();
 };
 
 #endif /* VECTOR2D_HPP_ */
