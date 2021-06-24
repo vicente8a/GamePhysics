@@ -5,8 +5,9 @@
  *      Author: vicenteochoa
  */
 
-#include "Particle.h"
-#include "Vector2D.h"
+#include "Particle.hpp"
+
+#include "Vector2D.hpp"
 
 Particle::Particle() {
 	Vector2D position;

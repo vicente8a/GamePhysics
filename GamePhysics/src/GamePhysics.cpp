@@ -7,12 +7,22 @@
 //============================================================================
 
 #include <iostream>
-#include "Vector2D.h"
+#include <stdio.h>
+#include "Vector2D.hpp"
+#include "Particle.hpp"
 
+const int num_particles = 1;
 
-using namespace std;
+Particle particles[num_particles];
+
+void PrintParticles() {
+	for(int i = 0; i < num_particles; i++) {
+		Particle *particle = &particles[i];
+		printf("particle[%i] (%.2f, %.2f\n", i, particle->getPosition(), particle->getPosition());
+	}
+}
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+
 	return 0;
 }

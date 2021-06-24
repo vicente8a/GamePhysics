@@ -5,8 +5,8 @@
  *      Author: vicenteochoa
  */
 
-#ifndef VECTOR2D_H_
-#define VECTOR2D_H_
+#ifndef VECTOR2D_HPP_
+#define VECTOR2D_HPP_
 
 
 
@@ -34,4 +34,4 @@ public:
 	}
 };
 
-#endif /* VECTOR2D_H_ */
+#endif /* VECTOR2D_HPP_ */
