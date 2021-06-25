@@ -23,6 +23,9 @@ public:
 	Particle(Vector2D pos, Vector2D v, float m);
 
 	void setParticle(Vector2D pos, Vector2D v, float m);
+	void setPosition(Vector2D pos);
+	void setVelocity(Vector2D v);
+	void setMass(float m);
 
 	// TODO: change this to getY and getX
 	Vector2D getPosition();

@@ -26,6 +26,16 @@ void Particle::setParticle(Vector2D pos, Vector2D v, float m) {
 	mass = m;
 }
 
+void Particle::setPosition(Vector2D pos) {
+	position = pos;
+}
+void Particle::setVelocity(Vector2D v) {
+	velocity = v;
+}
+void Particle::setMass(float m) {
+	mass = m;
+}
+
 Vector2D Particle::getPosition() {
 	return position;
 }

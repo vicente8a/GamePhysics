@@ -18,7 +18,15 @@ Particle particles[num_particles];
 void PrintParticles() {
 	for(int i = 0; i < num_particles; i++) {
 		Particle *particle = &particles[i];
-		//printf("particle[%i] (%.2f, %.2f\n", i, particle->getPosition(), particle->getPosition());
+		printf("particle[%i] (%.2f, %.2f\n", i, particle->getPosition().getX(), particle->getPosition().getY());
+	}
+}
+
+void InitializeParticles() {
+	for(int i = 0; i < num_particles; i++) {
+		particles[i].setPosition((Vector2D){arc4random_uniform(50), arc4random_uniform(50)});
+		particles[i].setVelocity((Vector2D){0,0});
+		particles[i].setMass(1.0);
 	}
 }
 

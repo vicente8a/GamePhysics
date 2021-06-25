@@ -9,6 +9,7 @@
 
 Vector2D::Vector2D() {
 	x = 0.0;
+	y = 0.0;
 }
 
 Vector2D::Vector2D(float x_coordinate, float y_coordinate) {
