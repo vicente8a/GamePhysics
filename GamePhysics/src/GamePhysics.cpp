@@ -30,6 +30,10 @@ void InitializeParticles() {
 	}
 }
 
+Vector2D ComputeForce(Particle *particle) {
+	return (Vector2D){0, particle->getMass() * -9.81};
+}
+
 int main() {
 
 	return 0;
