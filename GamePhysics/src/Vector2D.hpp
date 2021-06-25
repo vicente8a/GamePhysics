@@ -14,20 +14,23 @@ class Vector2D {
 
 private:
 	// attributes for x and y position
-	float x = 0.0;
-	float y = 0.0;
+	double x = 0.0;
+	double y = 0.0;
 
 public:
 	Vector2D();
 	// constructor
-	Vector2D(float x_coordinate, float y_coordinate);
+	Vector2D(double x_coordinate, double y_coordinate);
 
 	// setter methods
-	void setVector2D(float x_coordinate, float y_coordinate);
+	void setVector2D(double x_coordinate, double y_coordinate);
+
+	void setX(double x_coordinate);
+	void setY(double y_coordinate);
 
 	// getter methods
-	float getX();
-	float getY();
+	double getX();
+	double getY();
 };
 
 #endif /* VECTOR2D_HPP_ */

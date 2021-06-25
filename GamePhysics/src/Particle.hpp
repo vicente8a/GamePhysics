@@ -15,22 +15,21 @@ class Particle {
 private:
 	Vector2D position;
 	Vector2D velocity;
-	float mass = 0.0;
+	double mass = 0.0;
 
 public:
 
 	Particle();
-	Particle(Vector2D pos, Vector2D v, float m);
+	Particle(Vector2D pos, Vector2D v, double m);
 
-	void setParticle(Vector2D pos, Vector2D v, float m);
+	void setParticle(Vector2D pos, Vector2D v, double m);
 	void setPosition(Vector2D pos);
 	void setVelocity(Vector2D v);
-	void setMass(float m);
+	void setMass(double m);
 
-	// TODO: change this to getY and getX
 	Vector2D getPosition();
 	Vector2D getVelocity();
-	float getMass();
+	double getMass();
 
 };
 

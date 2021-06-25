@@ -12,21 +12,26 @@ Vector2D::Vector2D() {
 	y = 0.0;
 }
 
-Vector2D::Vector2D(float x_coordinate, float y_coordinate) {
-	// TODO Auto-generated constructor stub
-	void setVector2D(float x_coordinate, float y_coordinate);
-
+Vector2D::Vector2D(double x_coordinate, double y_coordinate) {
+	void setVector2D(double x_coordinate, double y_coordinate);
 }
 
-void Vector2D::setVector2D(float x_coordinate, float y_coordinate) {
+void Vector2D::setVector2D(double x_coordinate, double y_coordinate) {
 	x = x_coordinate;
 	y = y_coordinate;
 }
 
-float Vector2D::getX() {
+void Vector2D::setX(double x_coordinate) {
+	x = x_coordinate;
+}
+void Vector2D::setY(double y_coordinate) {
+	y = y_coordinate;
+}
+
+double Vector2D::getX() {
 	return x;
 }
-float Vector2D::getY() {
+double Vector2D::getY() {
 	return y;
 }
 /*
