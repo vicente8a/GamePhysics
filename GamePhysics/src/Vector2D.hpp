@@ -22,6 +22,7 @@ public:
 	// constructor
 	Vector2D(double x_coordinate, double y_coordinate);
 
+	Vector2D getVector2D();
 	// setter methods
 	void setVector2D(double x_coordinate, double y_coordinate);
 

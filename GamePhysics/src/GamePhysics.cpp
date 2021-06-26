@@ -24,18 +24,21 @@ void PrintParticles() {
 }
 
 void InitializeParticles() {
+	Vector2D pos;
+	Vector2D vel;
+	pos.setVector2D(-8, 58);
+	vel.setVector2D(0, 0);
 	for(int i = 0; i < num_particles; i++) {
-		particles[i].setPosition((Vector2D){0,0});
-		particles[i].setVelocity((Vector2D){0,0});
+		particles[i].setPosition(pos);
+		particles[i].setVelocity(vel);
 		particles[i].setMass(1.0);
 	}
 }
 
-// TODO I don't think this works
-// actually if we print the vector we get 0,-9.8
-// so i think this part does work
 Vector2D ComputeForce(Particle *particle) {
-	return (Vector2D){0.0, particle->getMass() * -9.81};
+	Vector2D v;
+	v.setVector2D(0.0, particle->getMass() * -9.81);
+	return v;
 }
 
 void RunSimulation() {
@@ -53,14 +56,14 @@ void RunSimulation() {
 		for(int i = 0; i < num_particles; i++) {
 			Particle *particle = &particles[i];
 			Vector2D force = ComputeForce(particle);
-			Vector2D acceleration(force.getX()/particle->getMass(),force.getY()/particle->getMass());
+			Vector2D acceleration;
+			acceleration.setVector2D(force.getX()/particle->getMass(), force.getY()/particle->getMass());
 
+			particle->setXVelocity(particle->getXVelocity() + (acceleration.getX() * dt));
+			particle->setYVelocity(particle->getYVelocity() + (acceleration.getY() * dt));
+			particle->setXPosition(particle->getXPosition() + (particle->getXVelocity() * dt));
+			particle->setYPosition(particle->getYPosition() + (particle->getYVelocity() * dt));
 
-			particle->setXVelocity(particle->getXVelocity() + acceleration.getX() * dt);
-			particle->setYVelocity(particle->getYVelocity() + acceleration.getY() * dt);
-
-			particle->setXVelocity(particle->getXPosition() + particle->getXVelocity() * dt);
-			particle->setXVelocity(particle->getYPosition() + particle->getYVelocity() * dt);
 		}
 		PrintParticles();
 		currentTime += dt;
