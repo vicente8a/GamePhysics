@@ -32,6 +32,8 @@ void InitializeParticles() {
 }
 
 // TODO I don't think this works
+// actually if we print the vector we get 0,-9.8
+// so i think this part does work
 Vector2D ComputeForce(Particle *particle) {
 	return (Vector2D){0.0, particle->getMass() * -9.81};
 }
