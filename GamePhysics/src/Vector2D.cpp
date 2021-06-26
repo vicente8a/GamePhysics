@@ -17,6 +17,10 @@ Vector2D::Vector2D(double x_coordinate, double y_coordinate) {
 }
 
 
+Vector2D Vector2D::getVector2D() {
+	return {x,y};
+}
+
 void Vector2D::setVector2D(double x_coordinate, double y_coordinate) {
 	x = x_coordinate;
 	y = y_coordinate;
