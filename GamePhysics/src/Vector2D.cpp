@@ -34,6 +34,7 @@ double Vector2D::getX() {
 double Vector2D::getY() {
 	return y;
 }
+
 /*
 Vector2D::~Vector2D() {
 	// TODO Auto-generated destructor stub
