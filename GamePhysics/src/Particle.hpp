@@ -25,6 +25,17 @@ public:
 	void setParticle(Vector2D pos, Vector2D v, double m);
 	void setPosition(Vector2D pos);
 	void setVelocity(Vector2D v);
+
+	void setXPosition(double x_pos);
+	void setXVelocity(double x_vel);
+	void setYPosition(double y_pos);
+	void setYVelocity(double y_vel);
+
+	double getXPosition();
+	double getXVelocity();
+	double getYPosition();
+	double getYVelocity();
+
 	void setMass(double m);
 
 	Vector2D getPosition();

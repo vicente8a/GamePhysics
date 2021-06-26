@@ -6,7 +6,6 @@
  */
 
 #include "Particle.hpp"
-
 #include "Vector2D.hpp"
 
 Particle::Particle() {
@@ -45,6 +44,31 @@ Vector2D Particle::getVelocity() {
 
 double Particle::getMass() {
 	return mass;
+}
+
+void Particle::setXPosition(double x_pos) {
+	position.setX(x_pos);
+}
+void Particle::setXVelocity(double x_vel) {
+	velocity.setX(x_vel);
+}
+void Particle::setYPosition(double y_pos) {
+	position.setY(y_pos);
+}
+void Particle::setYVelocity(double y_vel) {
+	velocity.setY(y_vel);
+}
+double Particle::getXPosition() {
+	return position.getX();
+}
+double Particle::getXVelocity() {
+	return velocity.getX();
+}
+double Particle::getYPosition() {
+	return position.getY();
+}
+double Particle::getYVelocity() {
+	return velocity.getY();
 }
 
 /*
