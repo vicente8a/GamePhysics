@@ -13,25 +13,26 @@
 class Vector2D {
 
 private:
-	// attributes for x and y position
+	// attributes for Vector2D object
+	// these are for x and y position
 	double x = 0.0;
 	double y = 0.0;
 
 public:
+	// default constructor
 	Vector2D();
-	// constructor
+	// constructor with x and y as parameter
 	Vector2D(double x_coordinate, double y_coordinate);
 
+	// getter method
 	Vector2D getVector2D();
-	// setter methods
-	void setVector2D(double x_coordinate, double y_coordinate);
-
-	void setX(double x_coordinate);
-	void setY(double y_coordinate);
-
-	// getter methods
 	double getX();
 	double getY();
+	
+	// setter methods
+	void setVector2D(double x_coordinate, double y_coordinate);
+	void setX(double x_coordinate);
+	void setY(double y_coordinate);
 };
 
 #endif /* VECTOR2D_HPP_ */
